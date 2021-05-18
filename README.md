@@ -1,9 +1,9 @@
 ## gen-ssl-wildcard-with-letsencrypt
-##step1: install certbot
+## step1: install certbot
 ```bash
 apt-get install letsencrypt
 ```
-##step2: Generate The Wildcard SSL Certificate
+## step2: Generate The Wildcard SSL Certificate
 ```bash
 certbot certonly --manual \
   --preferred-challenges=dns \
@@ -12,7 +12,7 @@ certbot certonly --manual \
   --manual-public-ip-logging-ok \
   --domain “*.domain.com”
 ```
-##step3: Authenticate The Domain’s Ownership
+## step3: Authenticate The Domain’s Ownership
 ```bash
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Plugins selected: Authenticator manual, Installer None
@@ -38,18 +38,18 @@ Cleaning up challengesIMPORTANT NOTES:
 ####### Record Value: J50GNXkhGmKCfn-0LQJcknVGtPEAQ_U_WajcLXgqWqo
 ####### Create TXT record via DNS console and setup key and value
 
-##step4: Get The Certificate
+## step4: Get The Certificate
 ![image](https://user-images.githubusercontent.com/53284451/118622121-32aafc80-b7f1-11eb-9aa0-153d164e578f.png)
 
 ```bash
 cd /etc/letsencrypt/live
 ```
 
-##step5: Cross Verify The Certificate
+## step5: Cross Verify The Certificate
 ```bash
 ./certbot-auto certificates
 ```
-##step6: Install certbot on Rancher
+## step6: Install certbot on Rancher
 #### click infrastructure -> certificates
 #### coppy privatekey, cert, chain cert
 ######## privkey.pem -> private key for the certificate.
