@@ -34,9 +34,9 @@ Cleaning up challengesIMPORTANT NOTES:
    again. To non-interactively renew *all* of your certificates, run
    "certbot renew"
 ```
-####Record Name: _acme-challenge
-####Record Value: J50GNXkhGmKCfn-0LQJcknVGtPEAQ_U_WajcLXgqWqo
-####Create TXT record via DNS console and setup key and value
+####### Record Name: _acme-challenge
+####### Record Value: J50GNXkhGmKCfn-0LQJcknVGtPEAQ_U_WajcLXgqWqo
+####### Create TXT record via DNS console and setup key and value
 
 ##step4: Get The Certificate
 ![image](https://user-images.githubusercontent.com/53284451/118622121-32aafc80-b7f1-11eb-9aa0-153d164e578f.png)
