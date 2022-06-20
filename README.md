@@ -7,7 +7,7 @@ apt-get install letsencrypt
 ```bash
 certbot certonly --manual \
   --preferred-challenges=dns \
-  --email caolv@eway.vn \
+  --email certbot@example.com \
   --agree-tos \
   --manual-public-ip-logging-ok \
   --domain “*.domain.com”
